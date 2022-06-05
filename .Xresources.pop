@@ -1,0 +1,18 @@
+#include "/home/dhanus/.rxvt_colors/mocha.dark"
+
+URxvt.scrollBar: False
+URxvt.font: xft: Hack Nerd Font:size=11
+
+
+
+ URxvt.perl-lib: $HOME/.urxvt/ext/
+!/usr/lib/urxvt/perl/
+
+URxvt.perl-ext-common: fullscreen, resize-font
+
+URxvt.keysym.F11: perl:fullscreen:switch
+
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show

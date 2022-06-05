@@ -1,18 +1,43 @@
-#include "/home/dhanus/.rxvt_colors/mocha.dark"
-
 URxvt.scrollBar: False
+! URxvt.font: xft: FantasqueSansMono Nerd Font:size=11
 URxvt.font: xft: Hack Nerd Font:size=11
 
 
 
-URxvt.perl-lib: $HOME/.urxvt/ext/
-!/usr/lib/urxvt/perl/
+! special
+URxvt.foreground:   #c5c8c6
+URxvt.background:   #1d1f21
+URxvt.cursorColor:  #c5c8c6
 
-URxvt.perl-ext-common: fullscreen, resize-font
+! black
+URxvt.color0:       #282a2e
+URxvt.color8:       #373b41
 
-URxvt.keysym.F11: perl:fullscreen:switch
+! red
+URxvt.color1:       #a54242
+URxvt.color9:       #cc6666
 
-URxvt.keysym.C-minus:     resize-font:smaller
-URxvt.keysym.C-plus:      resize-font:bigger
-URxvt.keysym.C-equal:     resize-font:reset
-URxvt.keysym.C-question:  resize-font:show
+! green
+URxvt.color2:       #8c9440
+URxvt.color10:      #b5bd68
+
+! yellow
+URxvt.color3:       #de935f
+URxvt.color11:      #f0c674
+
+! blue
+URxvt.color4:       #5f819d
+URxvt.color12:      #81a2be
+
+! magenta
+URxvt.color5:       #85678f
+URxvt.color13:      #b294bb
+
+! cyan
+URxvt.color6:       #5e8d87
+URxvt.color14:      #8abeb7
+
+! white
+URxvt.color7:       #707880
+URxvt.color15:      #c5c8c6
+
