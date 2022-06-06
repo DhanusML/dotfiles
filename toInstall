@@ -10,6 +10,7 @@ base-devel
 
 xorg-server
 xorg-apps
+xorg-xinit
 (graphics driver)
 
 yay
