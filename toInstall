@@ -2,6 +2,8 @@ networkmanager
 vim
 grub
 sudo
+pulseaudio
+pulseaudio-bluetooth
 bluez
 bluez-utils
 git

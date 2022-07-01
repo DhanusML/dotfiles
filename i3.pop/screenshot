@@ -1,0 +1,15 @@
+#!/bin/bash
+
+date=$(date +"%S-%M-%H_%d-%m-%y")
+fileName="$(date)_Screenshot.jpg"
+
+if [$# -eq 0 ]
+then
+	import screen $HOME/Pictures/Screenshots/fileName
+fi
+
+if [ $1 == 's' ]
+then
+	import -screen $HOME/Pictures/Screenshots/fileName
+fi
+
