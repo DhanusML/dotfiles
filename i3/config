@@ -3,6 +3,7 @@ default_border pixel 1
 default_floating_border pixel 1
 hide_edge_borders both
 
+exec_always picom --config /home/dhanus/.config/picom/picom.conf -b
 
 # notification daemon
 exec_always dunst
@@ -224,8 +225,8 @@ bindsym $mod+c exec run
 exec xinput set-prop 'Synaptics TM3096-006' 'libinput Tapping Enabled' 1
 exec xinput set-prop 'Synaptics TM3096-006' 'libinput Natural Scrolling Enabled' 1
 
-bindsym shift+Print exec screenshot && notify-send -u low "screenshot saved in" "~/Pictures/Screenshots/"
-bindsym Print exec screenshot s && notify-send -u low "screenshot saved in" "~/Pictures/Screenshots/"
+bindsym $mod+p exec screenshot 
+bindsym Print exec screenshot s 
 
 # wallpaper
-exec_always feh --bg-scale /home/dhanus/Pictures/Wallpapers/ivan-aivazovsky.jpg
+exec_always feh --bg-scale /home/dhanus/Pictures/Wallpapers/flying-whales-gojira.jpg
