@@ -195,6 +195,7 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status -c /home/dhanus/.config/i3status/i3status.conf
 	position top
+    font pango: DejaVu Sans Mono 9
 	colors{
 		background #1d1f21
 		statusline #c5c8c6

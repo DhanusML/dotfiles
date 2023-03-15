@@ -30,3 +30,13 @@ brave
 nautilus
 tmux
 
+libnotify
+dunst
+network-manager-applet
+
+sxiv
+zathura-cb
+zathura-djvu
+zathura-pdf-mupdf
+zathura-ps
+texlive-most
