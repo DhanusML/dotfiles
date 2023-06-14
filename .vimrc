@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 		Plug 'vim-syntastic/syntastic'
 		Plug 'ryanoasis/vim-devicons'
 		Plug 'sheerun/vim-polyglot'
+		Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
@@ -22,3 +23,4 @@ let g:airline_powerline_fonts = 1
 
 map <C-c> :!pdflatex main.tex<CR><CR>
 map <C-p> :!zathura main.pdf & disown<CR><CR>
+map <C-t> :!(alacritty --working-directory $(pwd) & disown) <CR><CR>

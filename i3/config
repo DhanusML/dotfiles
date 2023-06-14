@@ -4,6 +4,8 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
+exec_always xinput set-prop "Synaptics TM3096-006" "libinput Tapping Enabled" 1
+exec_alwyas xinput set-prop "Synaptics TM3096-006" "libinput Natural Scrolling Enabled Default" 1
 
 default_border pixel 1
 default_floating_border pixel 1
@@ -47,6 +49,10 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+
+bindsym XF86MonBrightnessUp exec sudo light -A 5
+bindsym XF86MonBrightnessDown exec sudo light -U 5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -195,13 +201,29 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status -c /home/dhanus/.config/i3status/i3status.conf
 	position top
-    font pango: DejaVu Sans Mono 9
+    font pango: DejaVu Sans Mono Nerd Font 9
 	colors{
 		background #1d1f21
 		statusline #c5c8c6
 		focused_workspace #c5c8c6 #052003
 	}
 }
+
+#
+#bar {
+#        status_command i3blocks -c ~/.config/i3blocks/config
+#        position top
+#        font pango: DejaVu Sans Mono Nerd Font 9
+#        colors {
+#                background #1d1f21
+#                statusline #c5c8c6
+#                focused_workspace #c5c8c6 #052003
+#        }
+#
+#}
+#
+
+for_window [class="ncmpcpp"] floating enable
 
 
 ## custom bindings ##
@@ -213,4 +235,14 @@ bindsym $mod+c exec run
 bindsym $mod+Print exec screenshot
 bindsym Print exec screenshot s
 
-exec_always feh --bg-scale /home/dhanus/Pictures/Wallpapers/arch.png
+exec_always feh --bg-scale /home/dhanus/Pictures/Wallpapers/sunset.jpg
+for_window [class="Cisco AnyConnect Secure Mobility Client"] floating enable
+
+
+# switch to workspace
+bindsym $mod+minus workspace 11
+
+bindsym $mod+Shift+minus move container to workspace 11
+
+workspace 11 output HDMI-1
+
