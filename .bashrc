@@ -13,6 +13,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vi='vim'
+alias vim='nvim'
+alias vi='nvim'
 
 # PS1="[\[\e[01;32m\]\u@\h \[\e[00;33m\]\W\[\e[00m\]]\$ "
 PS1="[\[\e[00;33m\]\w\[\e[00m\]]\$ "
@@ -21,3 +23,4 @@ PS1="[\[\e[00;33m\]\w\[\e[00m\]]\$ "
 # PS1='[\u@\h \W]\$ '
 
 PATH=$PATH:/home/dhanus/.myscripts:/home/dhanus/.local/bin:/home/dhanus/.myexes
+. "$HOME/.cargo/env"
