@@ -12,9 +12,14 @@ vim.keymap.set('n', '<leader>k', '<c-w>k')
 vim.keymap.set('n', '<leader>sv', ':source $MYVIMRC<cr>')
 vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>')
 vim.keymap.set('n', '<leader>n', invert_hl)
+vim.keymap.set('n', '<leader>.', ':bnext<cr>')
+vim.keymap.set('n', '<leader>,', ':bprevious<cr>')
 
 -- Insert mode
 vim.keymap.set('i', 'jk', '<esc>')
+
+-- Terminal mode
+vim.keymap.set('t', '<c-\\><leader>', '<c-\\><c-n>')
 
 -- Autocorrect
 vim.cmd('inoreabbrev paht path')

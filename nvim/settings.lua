@@ -15,4 +15,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 
-vim.opt.statusline = '%f %m %y %= C:%c L:%L %p%%'
+vim.opt.statusline = '%f %m %y %= C:%c L:%l/%L %p%%'
