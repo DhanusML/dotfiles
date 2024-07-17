@@ -19,7 +19,7 @@ vim.keymap.set('n', '<leader>,', ':bprevious<cr>')
 vim.keymap.set('i', 'jk', '<esc>')
 
 -- Terminal mode
-vim.keymap.set('t', '<c-\\>, '<c-\\><c-n>')
+vim.keymap.set('t', '<c-\\>', '<c-\\><c-n>')
 
 -- Autocorrect
 vim.cmd('inoreabbrev paht path')
