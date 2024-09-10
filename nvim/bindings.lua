@@ -4,6 +4,11 @@ local function invert_hl ()
     vim.opt.hlsearch = not vim.opt.hlsearch._value
 end
 
+
+local function launch_file_tree()
+    vim.cmd('20Lexplore')
+end
+
 -- Normal mode
 vim.keymap.set('n', '<leader>l', '<c-w>l')
 vim.keymap.set('n', '<leader>h', '<c-w>h')
@@ -14,6 +19,7 @@ vim.keymap.set('n', '<leader>ev', ':edit $MYVIMRC<cr>')
 vim.keymap.set('n', '<leader>n', invert_hl)
 vim.keymap.set('n', '<leader>.', ':bnext<cr>')
 vim.keymap.set('n', '<leader>,', ':bprevious<cr>')
+vim.keymap.set('n', '<leader>f', launch_file_tree)
 
 -- Insert mode
 vim.keymap.set('i', 'jk', '<esc>')
