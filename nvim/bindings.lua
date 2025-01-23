@@ -75,3 +75,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     group = 'common',
     desc = "briefly highlight yanked text"
 })
+
+vim.api.nvim_command([[autocmd TermOpen * setlocal nonu]])
+vim.api.nvim_command([[autocmd TermOpen * setlocal nornu]])
